@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: #5e6166;
+
+
+}
+
+.container {
+      width: 100vw;
+      height: 200vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 10vh;
+      color: #5d5e60;
+      font-stretch: semi-expanded;
+      margin-bottom: 1vh;
+    }
+
+    .content p {
+      text-align: center;
+      font-stretch: semi-expanded;
+      font-size: 2vw;
+      color: #5d5e60;
+      line-height: 1.4;
+    }
+
+
+
+#pane {
+      width: 100%;
+      height: 15vh;
+      background-color: white;
+      /*border: 2px solid black;*/
+      /*position: fixed;*/
+      justify-content: flex-start;
+    }
+
+
+#regForm {
+  background-color: #ffffff;
+  margin: 1px auto;
+  font-family: Raleway;
+  padding: 20px;
+  width: 70%;
+  height: 40%;
+  min-width: 300px;
+  border-radius: 15px 15px 15px 15px;
+  
+}
+
+/*h1 {
+  text-align: right;  
+  color: white;
+  font-size: 300%;
+  position: relative;
+
+
+}*/
+
+
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4a5d89;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color:#4a5d89;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #5d5e60;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4a5d89;
+}
+
+
+a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.previousround {
+    border-radius: 10%;
+    font-size: 100%;
+    position: relative;
+    color: #4a5d89;
+    border: 1px solid #4a5d89;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 16px;
+    margin-bottom: 16px;
+    
+   
+}
+
+h2{
+  text-align: center;
+  font-size: 200%;
+  padding: 0;
+}
+
+#login {
+  border-radius: 10%;
+    font-size: 100%;
+    position: relative;
+    color: white;
+    border: 1px solid #16D2C7;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    
+    
+}
+
+#finish {
+  position: relative;
+  left: 40%;
+}
+
