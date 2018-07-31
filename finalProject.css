@@ -394,7 +394,6 @@
 		.Links{
 			width: 40vw;
 			height: 100%;
-			border: 1px solid black;
 			text-align: center;
 		}
 
@@ -521,3 +520,4 @@
 		       width: 100%;
 		    }
 		}
+	
