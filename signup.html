@@ -9,7 +9,7 @@
 <head>
 	<title>	</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="finalProject.css"></link>
+	<!-- <link rel="stylesheet" type="text/css" href="finalProject.css"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
  	 <link href="signup.css" rel="stylesheet" type="text/css">
 
@@ -26,24 +26,47 @@
 		<div id="pane" class="pane">
 
 			<div id="logo">
-				
+				<a href="index.html"><img src="logo2.png" style="position: relative; float: left;height: 100%;width: 50%;left: 20%;"></a>
 			</div>
 
 			<div id="menu">
 				<ul>
-					<a href="#"><li>CONTACT</li></a>
-					<a href="#"><li>CHAT WITH US</li></a>
+					<a href="#"><li>CONTACT US</li></a>
 					<a href="#"><li>EMAIL</li></a>
-					<a href="#"><li>LOGIN</li></a>
+					<a href="account.html"><li onclick="document.getElementById('id01').style.display='block'" style="width:auto;">LOGIN</li></a>
 					<a href="#"><li><button>SIGN UP</button></li></a>
 				</ul>
 			</div>
 		</div>
 
 
-	<!-- 	<div id="nav" class="nav">
-		
-		</div> -->
+	<div id="id01" class="modal">
+			  
+			  <form class="modal-content animate" action="/action_page.php">
+			    <!-- div class="imgcontainer">
+			      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			      <img src="pic.png" alt="Avatar" class="avatar">
+			    </div> -->
+
+			    <div class="cont">
+			      <label for="uname"><b>Username</b></label>
+			      <input type="text" placeholder="Enter Username" name="uname" required>
+
+			      <label for="psw"><b>Password</b></label>
+			      <input type="password" placeholder="Enter Password" name="psw" required>
+			        
+			      <button type="submit">Login</button>
+			      <label>
+			        <input type="checkbox" checked="checked" name="remember"> Remember me
+			      </label>
+			    </div>
+
+			    <div class="cont" style="background-color:#f1f1f1">
+			      <button onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			      <span class="psw">Forgot <a href="home.html">password?</a></span>
+			    </div>
+			  </form>
+			</div>
 
 
 		<div class="content" id="content">
@@ -75,7 +98,7 @@
 
 				  <div class="tab" id="finish">
 				    <p style=" position:relative;right: 25vw; ">Great you're good to go!</p>
-				    <a href="home.html"><button type="button" id="login">Login</button></a>
+				    <a href="account.html"><button type="button" id="login">Login</button></a>
 				  </div>
 
 
@@ -105,55 +128,56 @@
 				</form>
 
 
-			
+			<div class="fifthItem" >
+				<div class="title" style="width: 70vw;height: 100%;float: left;"><b><h1 style="font-size: 10vh;color: white;font-stretch: semi-condensed;text-align: left;position: relative;left: 5vw;top: 3vh;">Protect your home today</h1></b></div>
 
-			<div class="footer">
+				<div class="title" style="float: right;width: 30vw;height: 100%;"><h1 style="font-size: 7vh;color: white;font-stretch: ultra-condensed;text-align: center;">Try it now</h1>
+					<a href="signup.html"><div id="getStarted1" style="position: relative; top: 0vh;">Get Started</div></a>
+				</div>
+			</div>
+
+			<div class="footer" style="position: relative;top: 10vh;">
+				
 				<div class="Services">
 					<h6 style="color: gray;">SERVICES</h6>
 					<ul>
-						<li>dw</li>
-						<li>qd</li>
-						<li>qd</li>
-						<li>qde</li>
-						<li>qed</li>
-						<li>qwd</li>
+						<li>Plumbing</li>
+						<li>Carpentary</li>
+						<li>Masonry</li>
+						<li>Pest Control</li>
+						<li>Laundry&Cleaning</li>
+						<li>Electricals</li>
 					</ul>
 				</div>
 
 				<div class="Company">
 					<h6 style="color: gray;">COMPANY</h6>
 					<ul>
-						<li>qdq</li>
-						<li>qdxq</li>
-						<li>qwd</li>
-						<li>qdeq</li>
-						<li>qdq</li>
-						<li>qd</li>
+						<li>TeinLogistics.com Blog</li>
+						<li>About Us</li>
+						<li>Contact Us</li>
+						<li>Reviews</li>
+						<li>Terms & Conditions</li>
+						<li>Affiliate Terms & Conditions</li>
+						<li>Privacy Policy</li>
+						<li>Cookie Policy</li>
 					</ul>
 				</div>
 
 				<div class="Support">
 					<h6 style="color: gray;">SUPPORT</h6>
 					<ul>
-						<li>qed</li>
-						<li>qed</li>
-						<li>qdw</li>
-						<li>qd</li>
-						<li>qd</li>
-						<li>qd</li>
+						<li>Resources</li>
+						<li>Home Mainteinance Articles</li>
+						<li>Learning Center</li>
+						<li>FAQ</li>
+						<li>Forgot Password</li>						
 					</ul>
 				</div>
 
+
 				<div class="Links">
-					<h6 style="color: gray;">SUPPORT</h6>
-					<ul>
-						<li>qed</li>
-						<li>qed</li>
-						<li>qdw</li>
-						<li>qd</li>
-						<li>qd</li>
-						<li>qd</li>
-					</ul>
+					<a href="index.html"><img src="logo2.png" style="position: relative; float: left;height: 50%;width: 50%;left: 20%;top:10%;"></a>			
 				</div>
 			</div>
 
@@ -164,7 +188,16 @@
 	</div>
 
 	<script type="text/javascript" src="finalProject.js">
-			
+			// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
 	</script>
 	<script type="text/javascript" src="signup.js"></script>
 </body>
