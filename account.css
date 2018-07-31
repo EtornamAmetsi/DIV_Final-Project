@@ -2,15 +2,30 @@ body {
 	width: 100vw;
 	height: 120vh;
 }
+
+.container{
+	width: 100vw;
+	max-height: 150vh;
+	
+}
+
 .main {
 	width: 100%;
-	height: 80vh;
+	height: 90vh;
 	/*border: 1px solid black;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	color: gray;
-	background-color: #a6c1ed;
+	/*background-color: #a6c1ed;*/
+}
+.pane{
+	border-bottom: 1px solid gray;
+	min-height: 15vh;
+}
+.footer{
+	border-top: 1px solid gray;
+	max-height: 50vh;
 }
 
 .account {
@@ -19,8 +34,8 @@ body {
 	/*border: 1px solid green;*/
 	padding-left: 5px;
 	background-color: white;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	
 }
 
 .info {
@@ -29,8 +44,8 @@ body {
 	/*border: 1px solid yellow;*/
 	background-color: white;
 	margin-right: 2.5vw;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
+	
+	
 }
 
 .account img {
@@ -64,3 +79,33 @@ body {
 	color: white;
 	margin-left: 2vw;
 }
+.card {
+	width: 80%;
+	height: 20vh;
+	box-shadow:  2px 4px 8px 2px #4a5d89;
+	margin-left: 6vw;
+	margin-bottom: 4vh;
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    position: relative;
+    float: left;
+    left: 20vw;
+    margin-top: 3vh;
+    /*margin-bottom: 5vh;*/
+}
+
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+} 
